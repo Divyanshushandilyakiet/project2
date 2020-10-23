@@ -1,0 +1,197 @@
+/* CSS reset  */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/* CSS variables */
+:root{
+    --navbar-height:60px;
+}
+/* Navigation bar */
+#navbar{
+    display: flex; 
+    align-items: center;  
+    position: relative;
+    top: 0px;
+}
+#navbar::before{
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.4;
+ }
+/* Navigation bar: logo and images */
+#logo{
+    margin: -1px 18px;
+}
+#logo img{
+    margin: 13px 0px;
+    height: 60px;
+}
+/* Navigation bar: list styling*/
+
+#navbar ul{
+    display: flex;
+    font-family: 'Staatliches', cursive;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding:3px 23px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;  
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 605px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('../food\ wall.webp') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.88;
+}
+#home h1{
+    text-align: center;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+#home p{
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Bebas Neue', cursive;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 4px 72px;
+    margin-bottom: 20px;
+    border-radius: 28px;
+    background: #f2f2f2;
+}
+
+#services .box p{
+    font-family: 'Bebas Neue', cursive;
+}
+#services{}
+
+/* client section */
+#client-section{
+    height: 344px;
+    /* position: relative; */
+ }
+
+ #client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../food\ wall\ 2.jpg');
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.3;
+   }
+    
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 25px;
+}
+#clients img{
+    height: 100px;
+}
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../contact\ wall.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact_box label{
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* utility class */
+.h-primary{
+    font-size: 3.9rem;
+    padding: 2px;
+    font-family: 'Bebas Neue', cursive;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 2px;
+    font-family: 'Bebas Neue', cursive;   
+}
+.btn{
+     padding: 6px 23px ;
+     border: 2px solid white;
+     background-color: brown;
+     color: white;
+     margin: 17px;
+     font-size: 1.5rem;
+     border-radius: 10px;
+     cursor: pointer;
+}
+.center{
+    text-align: center;
+}
